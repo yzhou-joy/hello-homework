@@ -17,3 +17,5 @@ ps:
 另外的一些命令：
 touch 创建文本文件
 git remote rm origin 取消之前关联的远程仓库链接
+git status  查看一些修改了的情况，以便同步
+
