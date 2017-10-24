@@ -1,0 +1,19 @@
+1、网页创建repository
+2、本地cd到需要上传的目录下：
+git init //把这个目录变成Git可以管理的仓库，此步骤增加.git隐藏文件
+git add README.md //文件添加到仓库，可没有
+git add . //不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
+git commit -m "first commit" //把文件提交到仓库
+git remote add origin git@github.com:wangjiax9/practice.git //关联远程仓库
+git push -u origin master //把本地库的所有内容推送到远程库上
+
+ps:
+1、在创建、上传ssh key之后可以利用命令ssh -T git@github.com查看，如果出现hello则表示可以了。
+
+
+
+
+
+另外的一些命令：
+touch 创建文本文件
+git remote rm origin 取消之前关联的远程仓库链接
