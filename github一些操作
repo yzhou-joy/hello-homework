@@ -6,3 +6,11 @@
 
 3、pull requests
 向原主人提交你的修改。首先要fork到自己这里，修改，然后creat pull requests。
+
+4、git rm -rf homework2/
+网页版并不能删除文件或文件夹，需要在本地删除。
+  1）首先需要同步本地与网页：git pull
+  2）删除本地想要删除的文件或文件夹：git rm -rf homework2/
+  3）可以查看状态：git status -s   （D为删除状态，？为本地未上传至网页的部分）
+  4）查看删除的状态：git commit -m "del"
+  5）将本地的删除操作与网页同步：git push -u origin master（本地有网页没有的部分不会添加，因为没有add）
